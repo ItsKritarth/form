@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form">
+        <div class="wrapper">
+            <div class="pi">
+            <h1>Registration</h1>
+            <hr width="100%" color="gray">
+            <p>Personal Info</p>
+            </div>
+            <form>
+                <div class="fname">
+                    <input type="text" name="fname" placeholder="First Name">
+                    </label>
+                </div>
+                <div class="lname">
+                    <input type="text" name="lname" placeholder="Last Name">
+                </div>
+                <br>
+                <div class="email">
+                    <input type="text" name="email" placeholder="Email Address">
+                    </label>
+                </div>
+                <div class="country">
+                    <select name="Country" id="cntry">
+                        <option>Country</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="America">USA</option>
+                        <option value="India">India</option>
+                        <option value="China">China</option>
+                        <option value="Others">Others :</option>
+                    </select>
+                </div>
+                <hr width="100%" color="gray">
+                <div class="gender">
+                    <p>Gender</p>
+                    <div class="male">
+                        <label for="Male">Male :</label>
+                        <input type="radio" name="male">
+                    </div>
+                    <div class="female">
+                        <label for="Female">Female :</label>
+                        <input type="radio" name="female">
+                    </div>
+                    <div class="others">
+                        <label for="Others">Others :</label>
+                        <input type="text" name="others">
+                    </div> 
+                </div>
+                <hr width="100%" color="gray">
+                <div class="Noti">
+                    <h2>Notifications</h2>
+                    <div class="weekly">
+                    <p>Weekly Reports</p>
+                    <input type="checkbox" name="security">
+                    </div>
+                    <div class="pull">
+                    <p>Pull Request</p>
+                    <input type="checkbox" name="security">
+                    </div>
+                    <div class="triggers">
+                    <p>Deployment Triggers</p>
+                    <input type="checkbox" name="security">
+                    </div>
+                </div>
+                <hr width="100%" color="gray">
+                <div class="security">
+                    <h2>Security</h2>
+                    <div class="security-checkbox">
+                        <p>Run security check upon login</p>
+                    <input type="checkbox" name="security">
+                    </div>
+                    <div class="range">
+                        <label for="less">Less</label>
+                        <input type="range" name="range">
+                        <label for="More">More</label>
+                    </div>                    
+                </div>
+                <hr width="100%" color="gray">
+                <div class="button1">
+                    <button>Register</button>
+                <div class="button2">
+                    <button>Cancel</button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
