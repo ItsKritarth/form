@@ -10,21 +10,20 @@
     <div class="form">
         <div class="wrapper">
             <div class="pi">
-            <h1>Registration</h1>
+            <h1>Sign-Up Form</h1>
             <hr width="100%" color="gray">
             <p>Personal Info</p>
             </div>
             <form>
                 <div class="fname">
-                    <input type="text" name="fname" placeholder="First Name">
-                    </label>
+                    <input type="text" id="username" name="fname" required placeholder="First Name">
                 </div>
                 <div class="lname">
-                    <input type="text" name="lname" placeholder="Last Name">
+                    <input type="text" name="lname" required, placeholder= "Last Name">
                 </div>
                 <br>
                 <div class="email">
-                    <input type="text" name="email" placeholder="Email Address">
+                    <input type="text" name="email" required placeholder= "Email Address">
                     </label>
                 </div>
                 <div class="country">
@@ -34,7 +33,15 @@
                         <option value="America">USA</option>
                         <option value="India">India</option>
                         <option value="China">China</option>
-                        <option value="Others">Others :</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Malaysia">Malasyia</option>
+                        <option value="Finland">Finland</option>
+                        <option value="Others">Others</option>
                     </select>
                 </div>
                 <hr width="100%" color="gray">
@@ -42,15 +49,15 @@
                     <p>Gender</p>
                     <div class="male">
                         <label for="Male">Male :</label>
-                        <input type="radio" name="male">
+                        <input type="radio" name="gender">
                     </div>
                     <div class="female">
                         <label for="Female">Female :</label>
-                        <input type="radio" name="female">
+                        <input type="radio" name="gender">
                     </div>
                     <div class="others">
                         <label for="Others">Others :</label>
-                        <input type="text" name="others">
+                        <input type="radio" name="gender">
                     </div> 
                 </div>
                 <hr width="100%" color="gray">
@@ -80,11 +87,17 @@
                         <label for="less">Less</label>
                         <input type="range" name="range">
                         <label for="More">More</label>
-                    </div>                    
+                    </div>
+                    <br>
+                    <div class="remember">
+                        <label for="remember">Remember Me :</label>
+                        <input type="checkbox" name="remember me">
+                    </div>       
+                    <br>
                 </div>
                 <hr width="100%" color="gray">
                 <div class="button1">
-                    <button>Register</button>
+                    <button>Sign Up</button>
                 <div class="button2">
                     <button>Cancel</button>
                 </div>
